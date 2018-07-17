@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<body>
+<form onsubmit='return(verify())'>
+<fieldset style="background-color:burlywood";>
+<legend> Create New Account</legend>
+<pre><b>First Name:</b><input type="text" id="5" size="20">*</pre><br>
+<pre><b>Second Name:</b><input type="text" id="6" size="20"></pre><br>
+<pre><b>Date OF Birth:</b>
+<pre>DAY:<select>
+<option value="-1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+</pre>
+<pre>
+MONTH:<select>
+<option value="january"> january</option>
+<option value="february">february</option>
+<option value="march">march</option>
+<option value="april">april</option>
+<option value="may">may</option>
+<option value="june">june</option>
+<option value="july">july</option>
+<option value="august">august</option>
+<option value="september">september</option>
+<option value="october">october</option>
+<option value="november">november</option>
+<option value="december">december</option>
+</select>
+</pre>
+<pre>
+year:<input type="number" id="7" size="4">
+</pre>
+</pre>
+<pre> 
+<b> GENDER: </b><br>
+<input type="radio" name="gender" value="male">Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+</pre>
+<pre>
+<b>Contact No:</b><input type="number" id="8" size="10" ><br>
+</pre>
+<pre>
+<input type="submit" style="color:black" value="Submit">
+</pre>
+</form>
+<a href="new1.htm">
+HOME
+</a>
+</fieldset>
+<script>
+function verify()
+{
+if(document.getElementById("5").value=="")
+{
+alert("please enter first name")
+document.getElementById("5").focus()
+return false;
+}
+
+if(document.getElementById("6").value=="")
+{
+alert("please enter second name")
+document.getElementById("6").focus()
+return false;
+}
+
+if(document.getElementById("7").value=="")
+{
+alert("please enter year in date of birth")
+document.getElementById("7").focus()
+return false;
+}
+
+if(document.getElementById("8").value=="")
+{
+alert("please enter contact no")
+document.getElementById("8").focus()
+return false;
+}
+
+return true;
+}
+</script>
+
+</body>
+</html>
